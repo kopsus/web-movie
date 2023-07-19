@@ -1,0 +1,15 @@
+.parents-card-description-home {
+  @apply px-8 rounded-lg my-20;
+}
+
+.card-desc-home {
+  @apply grid grid-cols-2 items-center gap-5 py-5 md:px-10;
+}
+
+.desc-home {
+  @apply flex flex-col gap-2;
+}
+
+.title-desc-home {
+  @apply text-[3.5vw] md:text-[3vw] font-semibold;
+}

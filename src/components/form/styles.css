@@ -1,0 +1,7 @@
+.parents-card-login {
+  @apply text-primaryWhite bg-secondRed opacity-[0.8] w-[85%] md:w-[60%] lg:w-[35%] rounded-lg md:my-10 mx-auto py-7 px-10 shadow-md;
+}
+
+.input-login {
+  @apply input input-bordered w-full text-primaryBgBlack bg-secondBrown;
+}

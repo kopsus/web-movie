@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-primaryFont m-0 p-0;
+  }
+
+  body {
+    @apply bg-primaryBgBlack relative h-full;
+  }
+
+  .title {
+    @apply text-primaryRed text-2xl font-bold;
+  }
+
+  .items-header {
+    @apply bg-primaryBgBlack fixed w-full top-0 left-0 py-2 lg:py-5 px-7 md:px-16 flex justify-between items-center z-50;
+  }
+
+  /* home */
+
+  .parents-card-description-home,
+  .parents-card-email {
+    @apply w-[90%] mx-auto text-primaryWhite rounded-lg py-5;
+  }
+
+  /* end home */
+
+  /* Movies */
+  .parent-movie {
+    @apply px-2 py-10;
+  }
+
+  .component-movie {
+    @apply text-[4vw] md:text-[3.5vw] lg:text-[1.7vw] text-primaryWhite font-semibold mb-5 ml-7;
+  }
+
+  /* BUTTON PLAY AND LIST */
+  .btnPlayList {
+    @apply text-[3vw] lg:text-[1.3vw] px-3 py-1 md:px-5 md:py-2 rounded-md hover:scale-105;
+  }
+}

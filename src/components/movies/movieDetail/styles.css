@@ -1,0 +1,31 @@
+.movie-detail {
+  @apply fixed bottom-0 left-0 h-[50%] lg:h-[70%] px-5 py-3 md:p-5 z-[500] overflow-y-auto;
+}
+
+.btn-close {
+  @apply float-right border-none text-primaryWhite bg-primaryBgBlack hover:bg-primaryRed;
+}
+
+.parent-movie-detail {
+  @apply flex flex-col gap-2 md:gap-8 w-[80%] lg:w-[50%];
+}
+
+.contain-movie-detail {
+  @apply flex flex-col gap-3 md:gap-5 text-primaryWhite;
+}
+
+.title-movie-detail {
+  @apply text-[6vw] md:text-4xl font-bold;
+}
+
+.release-popular-vote {
+  @apply text-[3.5vw] md:text-[2.7vw] lg:text-[1.5vw] flex flex-col gap-1 md:gap-2;
+}
+
+.desc-detail-movie {
+  @apply text-[#7A7A7A] text-[3vw] md:text-[2.5vw] lg:text-[1.3vw];
+}
+
+.btn-play-list {
+  @apply flex gap-3 md:gap-5 text-primaryWhite;
+}
