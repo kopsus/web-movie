@@ -7,7 +7,6 @@ import { FcGoogle } from "react-icons/fc"
 
 // assets
 import BackDropLogin from "../../assets/backdropLogin.png"
-import Footer from "../footer"
 
 // css
 import "./styles.css"
@@ -15,12 +14,6 @@ import "./styles.css"
 const Login = () => {
   return (
     <div className="">
-      <div className="px-16 py-5">
-        <Link to="/" className="title">
-          Sokin
-        </Link>
-      </div>
-
       <div
         style={{
           backgroundImage: `url(${BackDropLogin})`,
@@ -28,6 +21,7 @@ const Login = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
+        className="min-h-screen flex justify-center items-center"
       >
         <div className="parents-card-login">
           <div className="flex flex-col gap-5">
@@ -69,18 +63,7 @@ const Login = () => {
               Submit
             </Link>
           </form>
-
-          <div className="text-[4vw] md:text-[2.5vw] lg:text-[1.3vw] my-7">
-            <p>
-              Baru di sokin?{" "}
-              <Link className="font-semibold">Daftar Sekarang</Link>
-            </p>
-          </div>
         </div>
-      </div>
-
-      <div className="mt-20">
-        <Footer />
       </div>
     </div>
   )

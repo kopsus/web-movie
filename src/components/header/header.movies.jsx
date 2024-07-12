@@ -144,7 +144,7 @@ const HeaderMain = ({
 
         {/* END MOBILE */}
 
-        {movies && movies.length > 0 && !selectedMovie ? ( // Tampilkan daftar film hasil pencarian jika ada dan jika tidak ada film yang dipilih
+        {movies && movies.length > 0 && !selectedMovie ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[15vw] md:mt-[5.5vw] md:my-[10vw] gap-5 px-5 my-10">
             {movies.map((data, i) => (
               <div
@@ -164,9 +164,8 @@ const HeaderMain = ({
             ))}
           </div>
         ) : (
-          // Tampilkan bagian "Narcos" jika tidak ada hasil pencarian atau jika ada film yang dipilih
           <div
-            className="mt-[15vw] md:mt-[5.5vw] object-cover mb-20 md:px-16 md:py-36 lg:py-44 pl-5 pr-5 py-20"
+            className="mt-[15vw] md:mt-[5vw] object-cover mb-20 md:px-16 md:py-36 lg:py-44 pl-5 pr-5 py-20"
             style={{
               backgroundImage: `url(${Narcos})`,
               backgroundSize: "cover",
@@ -174,7 +173,7 @@ const HeaderMain = ({
               backgroundPosition: "center",
             }}
           >
-            {!selectedMovie && ( // Hanya tampilkan bagian "Narcos" jika tidak ada film yang dipilih
+            {!selectedMovie && (
               <div className="text-primaryWhite flex flex-col gap-10 md:gap-14">
                 <div className="w-[60%] flex flex-col gap-6 lg:gap-10">
                   <p className="text-[7vw] md:text-[5.5vw] font-semibold">
@@ -198,28 +197,6 @@ const HeaderMain = ({
           </div>
         )}
       </header>
-
-      {/* {movies && (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 my-10">
-          {movies.map((data, i) => (
-            <div
-              key={i}
-              className="rounded-lg cursor-pointer hover:scale-[1.1] transition hover:opacity-[0.3]"
-              style={{
-                pointerEvents: disableInteraction ? "none" : "",
-              }}
-            >
-              <img
-                onClick={() => handleDetailMovie(data)}
-                className="rounded-xl"
-                src={`${process.env.REACT_APP_IMG_PATH}/${data.poster_path}`}
-                alt={data.title}
-              />
-            </div>
-          ))}
-        </div>
-      )} */}
-
       {selectedMovie && (
         <MovieSearchDetail
           detailMovie={selectedMovie}
